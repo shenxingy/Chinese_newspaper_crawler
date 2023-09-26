@@ -1,5 +1,5 @@
 # Chinese Newspaper Crawler
-### Utilizing Chrome Driver for Web Scraping CNKI Newspapers (China National Knowledge Infrastructure, 中国知网, https://www.cnki.net/)
+### Utilizing Chrome Driver to Scrap Newspapers from CNKI (China National Knowledge Infrastructure, 中国知网, https://www.cnki.net/)
 CNKI is a valuable resource for accessing academic and research articles. With `CNKI_Crawler.py`, we can extract the following attributes from CNKI newspapers:
 - **Number**: The unique identifier or reference number of the newspaper article.
 - **Title**: The headline or title of the newspaper article.
