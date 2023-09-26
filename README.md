@@ -11,10 +11,7 @@ CNKI is a valuable resource for accessing academic and research articles. In thi
 - **Contents**: The actual content of the newspaper article.
 - **Keywords**: Keywords or tags associated with the article, providing insights into its topic or subject matter.
 
-![Preview](https://github.com/shenxingy/CNKI_Crawler/blob/main/data.png)
-  
-
-
+![Preview](https://github.com/shenxingy/Chinese_newspaper_crawler/blob/main/Sample_Datasets/CNKI_Sample.png)
 
 ## Xinmin_Crawler
 Using requests and beautifulsoup to crawl newspapers on XMWB(新民晚报，https://paper.xinmin.cn/). \
