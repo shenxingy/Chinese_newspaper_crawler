@@ -13,6 +13,6 @@ CNKI is a valuable resource for accessing academic and research articles. With `
 ![Preview](https://github.com/shenxingy/Chinese_newspaper_crawler/blob/main/Sample_Datasets/CNKI_Sample.png)
 
 ### Xinmin_Crawler
-While CNKI provides access to a wide range of newspapers, there are still some newspapers not available on the platform. For such cases, `XinMin.py` is developed, an example that utilizes the Requests and the Beautiful Soup packages to crawl newspapers from XMWB(新民晚报，https://paper.xinmin.cn/). The attributes include: *Special Title*, *Title*, *Subtitle*, *Content*, *Links*, *Date*, *Ban(Page Headline)*.
+While CNKI provides access to a wide range of newspapers, there are still some newspapers not available on the platform. For such cases, `XinMin_Crawler.py` is developed, an example that utilizes the Requests and the Beautiful Soup packages to crawl newspapers from XMWB(新民晚报，https://paper.xinmin.cn/). The attributes include: *Special Title*, *Title*, *Subtitle*, *Content*, *Links*, *Date*, *Ban(Page Headline)*.
 ![Preview](https://github.com/shenxingy/Chinese_newspaper_crawler/blob/main/Sample_Datasets/Xinmin_Sample.png)
 
