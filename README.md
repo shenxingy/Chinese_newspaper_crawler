@@ -8,7 +8,7 @@ CNKI is a valuable resource for accessing academic and research articles. With `
 - **Date**: The date when the newspaper article was published.
 - **Download**: The count of how many times the article has been downloaded.
 - **Links**: The link that leads to the full newspaper article.
-- **Contents**: The actual content of the newspaper article.
+- **Contents**: The actual full content of the newspaper article.
 - **Keywords**: Keywords or tags associated with the article, providing insights into its topic or subject matter.
 ![Preview](https://github.com/shenxingy/Chinese_newspaper_crawler/blob/main/Sample_Datasets/CNKI_Sample.png)
 
