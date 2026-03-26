@@ -31,7 +31,7 @@ def go_to_page(driver, page_num):
             page.click()
             time.sleep(1)
             break
-        except:
+        except Exception:
             i += 4
             # Find and click on the page link
             page = page_box.find_element(By.LINK_TEXT, str(i))

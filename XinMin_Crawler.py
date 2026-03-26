@@ -22,8 +22,13 @@ def get_news(url):
     data_list = []
     date = url.split('/')[-2]
     print("processing date: ", date)
-    
-    response = requests.get(url)
+
+    try:
+        response = requests.get(url, timeout=30)
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Failed to fetch {url}: {e}")
+        return pd.DataFrame(columns=['Special Title', 'Title', 'Subtitle', 'Content', 'Links', 'Date', 'Ban'])
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # collect the catalog of news in the newspaper
@@ -34,13 +39,18 @@ def get_news(url):
         catalog_text += "\n"
     catalog = catalog_text.split('\n')
     catalog = list(filter(None, catalog))
-    
+
     for i in range(len(catalog)):
         current_page_name = catalog[i]
         current_ban = current_page_name.split(':')[0]
         current_ban = current_ban.replace('/', '-')[1:-1]
         current_url = url.replace('1.htm', current_ban + '.htm')
-        response = requests.get(current_url)
+        try:
+            response = requests.get(current_url, timeout=30)
+            response.raise_for_status()
+        except requests.RequestException as e:
+            print(f"Failed to fetch {current_url}: {e}")
+            continue
         soup = BeautifulSoup(response.text, 'html.parser')
 
         # Find the parent element with both classes
